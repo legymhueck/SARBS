@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# 11.06.2024 0.9 Prelaunch Version
 # Sergi's automatisches Einrichtungsskript (SARBS)
 # von Luke Smith <luke@lukesmith.xyz>
 # übersetzt von Sergius <sergius@posteo.de>
