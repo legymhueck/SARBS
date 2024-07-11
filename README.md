@@ -23,11 +23,11 @@ In diesem Repo sind die Konfigurations und Skriptdateien die in [SARBS](https://
 
 ## Nutzung
 
-Diese Konfigurationsdateien funktionieren unabhängig mit verschiedenen Suckless Tools die in SARBS intergriert sind, dennoch empfehle ich SARBS als Ganzes zu nutzen, und GitHub als reine Kollaborations- und Entwicklungs-platform zu betrachten.
+Diese Konfigurationsdateien funktionieren unabhängig mit verschiedenen suckless Tools die in SARBS intergriert sind, dennoch empfehle ich SARBS als Ganzes zu nutzen, und GitHub als reine Kollaborations- und Entwicklungs-platform zu betrachten.
 
-- [dwm](https://github.com/lukesmithxyz/dwm) (window manager)
-- [dwmblocks](https://github.com/lukesmithxyz/dwmblocks) (statusbar)
-- [st](https://github.com/lukesmithxyz/st) (terminal emulator)
+- [dwm](https://github.com/Sergi-us/dwm) (window manager)
+- [dwmblocks](https://github.com/Sergi-us/dwmblocks) (statusbar)
+- [st](https://github.com/Sergi-us/st) (terminal emulator)
 
 _I also recommend trying out
 [mutt-wizard](https://github.com/lukesmithxyz/mutt-wizard), which additionally
