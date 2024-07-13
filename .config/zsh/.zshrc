@@ -4,11 +4,12 @@ autoload -U colors && colors	# Load colors
 
 PS1='%B%F{cyan}┌─[%D]─[%F{magenta}%n%F{cyan}@%F{yellow}%m%F{cyan}]─[%F{green}%~%F{cyan}]%f%b
 %B%F{cyan}└─[%F{blue}%*%F{cyan}]─➤ %f%b'
-
+## Alternative Promt Version
 #PS1='%B%F{cyan}┌─[%D]─[%F{magenta}%n%F{cyan}@%F{yellow}%m%F{cyan}]─[%F{green}%~%F{cyan}]%f%b
 #%B%F{cyan}└─[%F{blue}%*%F{cyan}]─➤ %f%b '
-
+# Luke's Promt Version (einzeilig)
 # PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
