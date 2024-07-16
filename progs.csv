@@ -2,6 +2,7 @@
 ,xorg-server,"gder grafische Server. Dieser erste Eintrag kann eine Weile dauern, da er bei sauberen Installationen viele andere Abhängigkeiten mit sich zieht."
 ,xorg-xwininfo,"ermöglicht das Abfragen von Informationen über Fenster."
 ,xorg-xinit,"startet den grafischen Server."
+,xorg-xev,"tool um Tasten zu identifizieren"
 ,geoip,"geoip"
 ,polkit,"verwaltet Benutzer-Richtlinien."
 ,libertinus-font,"stellt die serifenlosen und Serifenschriften für SARBS bereit."
