@@ -1,6 +1,7 @@
 # The Voidrice [SARBS](https://sarbs.sergius.xyz/)'s Dotfiles)
 ist ein Fork von [Luke Smith](https://github.com/LukeSmithxyz/voidrice) unter einbehaltung der Philosophie und als Community projekt für Deutschsprachige Nutzer.
 
+
 SARBS wird zwar auf GitHub entwickelt und hier findet die kolaboration stadt aber bereitgestellt wird es auf meinen Server unter https://sarbs.sergius.xyz
 
 In diesem Repo sind die Konfigurations und Skriptdateien die in [SARBS](https://sarbs.sergius.xyz) mitgeliefert werden.
