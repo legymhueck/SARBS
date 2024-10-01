@@ -91,7 +91,6 @@ A,losslesscut-bin,"Plattformübergreifendes GUI-Tool zum verlustfreien Trimmen/S
 ,scrcpy,"Anzeige und Steuerung Ihres Android-Geräts."
 ,bluez,"Daemons für den Bluetooth-Protokollstapel."
 ,bluez-utils,"Entwicklungs- und Debugging-Utilities für den Bluetooth-Protokollstapel."
-,bluez-tools,"Eine Reihe von Tools zum Verwalten von Bluetooth-Geräten für Linux"
 ,openssh,"SSH-Protokollimplementierung für Fernanmeldung, Befehlsausführung und Dateitransfer."
 ,tldr,"alternative Man-Pages mit kompakter Ausgabe"
 A,wlr-sunclock-git,"zeigt ein Sonnenuhr-Desktop-Widget mithilfe des Layer-Shell-Protokolls an."
