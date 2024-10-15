@@ -5,6 +5,7 @@
 # von Luke Smith <luke@lukesmith.xyz>
 # übersetzt von Sergius <sergius@posteo.de>
 # Lizenz: GNU GPLv3
+
 ### OPTIONEN UND VARIABLEN ###
 
 dotfilesrepo="https://github.com/Sergi-us/voidrice.git"
