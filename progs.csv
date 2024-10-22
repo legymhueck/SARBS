@@ -115,4 +115,5 @@ A,cd-discid,"Ein Backend-Dienstprogramm zum Abrufen von CDDB-Discid-Informatione
 ,libinput,"Bibliothek zur Verwaltung von Eingabegeräten wie Touchpad"
 ,sxiv,"ein simpler Bildbetrachter für X11"
 ,geoip,"wird für sb-iplocate gebraucht"
+,python-pywal,"wechselt Farben basierend auf den Hintergrundbild"
 #,dosfstools,"ermöglicht Ihrem Computer den Zugriff auf dos-ähnliche Dateisysteme."
