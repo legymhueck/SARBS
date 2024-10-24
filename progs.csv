@@ -116,4 +116,5 @@ A,cd-discid,"Ein Backend-Dienstprogramm zum Abrufen von CDDB-Discid-Informatione
 ,sxiv,"ein simpler Bildbetrachter für X11"
 ,geoip,"wird für sb-iplocate gebraucht"
 ,python-pywal,"wechselt Farben basierend auf den Hintergrundbild"
+,termshark,"TEST Terminal UI for tshark, inspired by Wireshark"
 #,dosfstools,"ermöglicht Ihrem Computer den Zugriff auf dos-ähnliche Dateisysteme."
