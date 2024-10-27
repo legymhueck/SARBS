@@ -337,11 +337,14 @@ $aurhelper -Y --save --devel
 # Startet die Installationsschleife für alle Programme.
 installationloop
 
-# PipeWire-Dienste für den Benutzer aktivieren
-sudo -u "$name" systemctl --user enable --now pipewire pipewire-pulse wireplumber
+# PipeWire-Sockets für den Benutzer aktivieren
+sudo -u "$name" systemctl --user enable --now pipewire.socket pipewire-pulse.socket
+
+# WirePlumber-Dienst aktivieren
+sudo -u "$name" systemctl --user enable --now wireplumber.service
 
 # PulseAudio-Dienste maskieren
-sudo -u "$name" systemctl --user mask pulseaudio pulseaudio.socket
+sudo -u "$name" systemctl --user mask pulseaudio.service pulseaudio.socket
 
 # Klont die Dotfiles und entfernt unnötige Dateien.
 putgitrepo "$dotfilesrepo" "/home/$name" "$repobranch"
