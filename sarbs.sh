@@ -310,6 +310,9 @@ ntpd -q -g >/dev/null 2>&1
 # Fügt den neuen Benutzer hinzu.
 adduserandpass || error "Fehler beim Hinzufügen des Benutzernamens und/oder Passworts."
 
+# Benutzer-Linger aktivieren (für Pipewire notwendig)
+loginctl enable-linger "$name"
+
 # Übernimmt neue sudoers-Datei, falls vorhanden.
 [ -f /etc/sudoers.pacnew ] && cp /etc/sudoers.pacnew /etc/sudoers
 
@@ -328,7 +331,7 @@ sed -i "s/-j2/-j$(nproc)/;/^#MAKEFLAGS/s/^#//" /etc/makepkg.conf
 # Installiert den AUR-Helper manuell.
 manualinstall $aurhelper || error "Fehler beim Installieren des AUR-Helfers."
 
-# Stellt sicher, dass Git-Pakete aus dem AUR automatisch aktualisiert werden.
+# AUR-Helper konfigurieren (Stellt sicher, dass Git-Pakete aus dem AUR automatisch aktualisiert werden)
 $aurhelper -Y --save --devel
 
 # Startet die Installationsschleife für alle Programme.
