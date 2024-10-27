@@ -352,9 +352,6 @@ chsh -s /bin/zsh "$name" >/dev/null 2>&1
 sudo -u "$name" mkdir -p "/home/$name/.cache/zsh/"
 sudo -u "$name" mkdir -p "/home/$name/.config/abook/"
 sudo -u "$name" mkdir -p "/home/$name/.config/mpd/playlists/"
-# PipeWire Konfiguration
-sudo -u "$name" mkdir -p "/home/$name/.config/systemd/user/"
-sudo -u "$name" ln -s /usr/share/pipewire/pipewire.conf "/home/$name/.config/pipewire/pipewire.conf"
 
 # Generiert die dbus UUID für Artix mit runit.
 dbus-uuidgen >/var/lib/dbus/machine-id
