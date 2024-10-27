@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# 11.06.2024 0.9 Prelaunch Version
+# SARBS 2024.10.27
 # Sergi's automatisches Einrichtungsskript (SARBS)
 # von Luke Smith <luke@lukesmith.xyz>
 # übersetzt von Sergius <sergius@posteo.de>
@@ -187,29 +187,6 @@ installationloop() {
     done </tmp/progs.csv
 }
 
-# Neue Funktion für PipeWire-Setup
-setup_pipewire() {
-    whiptail --title "SARBS Installation" \
-        --infobox "PipeWire-Dienste werden konfiguriert..." 7 60
-
-    # Erstelle das systemd User-Verzeichnis falls es nicht existiert
-    sudo -u "$name" mkdir -p "/home/$name/.config/systemd/user/"
-
-    # Aktiviere und starte PipeWire-Dienste für den Benutzer
-    sudo -u "$name" systemctl --user enable pipewire.socket
-    sudo -u "$name" systemctl --user enable pipewire.service
-    sudo -u "$name" systemctl --user enable pipewire-pulse.socket
-    sudo -u "$name" systemctl --user enable pipewire-pulse.service
-    sudo -u "$name" systemctl --user enable wireplumber.service
-
-    # Starte die Dienste
-    sudo -u "$name" systemctl --user start pipewire.socket
-    sudo -u "$name" systemctl --user start pipewire.service
-    sudo -u "$name" systemctl --user start pipewire-pulse.socket
-    sudo -u "$name" systemctl --user start pipewire-pulse.service
-    sudo -u "$name" systemctl --user start wireplumber.service
-}
-
 # Klont ein Git-Repository und kopiert die Dateien in ein Zielverzeichnis.
 putgitrepo() {
     whiptail --infobox "Konfigurationsdateien werden heruntergeladen und installiert..." 7 60
@@ -262,7 +239,8 @@ Exec=/usr/local/lib/arkenfox-auto-update" > /etc/pacman.d/hooks/arkenfox.hook
 
 # Installiert Firefox-Add-ons manuell durch Herunterladen der XPI-Dateien.
 installffaddons(){
-    addonlist="ublock-origin decentraleyes istilldontcareaboutcookies vim-vixen"
+    # Liste der zu installierenden Add-ons - neu hinzugefügt: darkreader und keepassxc-browser
+    addonlist="ublock-origin decentraleyes istilldontcareaboutcookies vim-vixen darkreader keepassxc-browser"
     addontmp="$(mktemp -d)"
     trap "rm -fr $addontmp" HUP INT QUIT TERM PWR EXIT
     IFS=' '
@@ -356,9 +334,6 @@ $aurhelper -Y --save --devel
 # Startet die Installationsschleife für alle Programme.
 installationloop
 
-# Konfiguriert PipeWire nach der Installation
-setup_pipewire || error "Fehler bei der PipeWire-Konfiguration"
-
 # Klont die Dotfiles und entfernt unnötige Dateien.
 putgitrepo "$dotfilesrepo" "/home/$name" "$repobranch"
 [ -z "/home/$name/.config/newsboat/urls" ] &&
@@ -377,6 +352,9 @@ chsh -s /bin/zsh "$name" >/dev/null 2>&1
 sudo -u "$name" mkdir -p "/home/$name/.cache/zsh/"
 sudo -u "$name" mkdir -p "/home/$name/.config/abook/"
 sudo -u "$name" mkdir -p "/home/$name/.config/mpd/playlists/"
+# PipeWire Konfiguration
+sudo -u "$name" mkdir -p "/home/$name/.config/systemd/user/"
+sudo -u "$name" ln -s /usr/share/pipewire/pipewire.conf "/home/$name/.config/pipewire/pipewire.conf"
 
 # Generiert die dbus UUID für Artix mit runit.
 dbus-uuidgen >/var/lib/dbus/machine-id
