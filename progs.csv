@@ -74,6 +74,7 @@ G,https://github.com/Sergi-us/dmenu.git,"führt Befehle aus und bietet eine Benu
 G,https://github.com/Sergi-us/st.git,"mein Build des Terminalemulators von suckless."
 G,https://github.com/Sergi-us/dwm.git,"DWM-6.4 der Fenstermanager."
 G,https://github.com/Sergi-us/mutt-wizard.git,"Einrichtungsassisten für neomutt, E-Mail-System."
+G,https://github.com/Sergi-us/surf.git,"Suckless Browser."
 A,losslesscut-bin,"Plattformübergreifendes GUI-Tool zum verlustfreien Trimmen/Schnitt von Video-/Audiodateien"
 ,slock," ermöglicht das Sperren des Computers und schnelles Entsperren mit Ihrem Passwort."
 ,socat," ein Dienstprogramm, das zwei Byte-Streams erstellt und Daten zwischen ihnen überträgt."
