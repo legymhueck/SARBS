@@ -65,3 +65,5 @@ Thomas Thiemeyer's *The Road to Samarkand* ([fb](https://www.facebook.com/t.thie
 
 ## TODO scripy PGP erstellung klären
 mit scripy kann man auf sein Android Handy zugreifen. Es ist für SARBS nicht notwendig, allerdings nutze ich es um mit meinem Handy zu interagieren. Bei der Installation von Sarbs ist mir aufgefallen dass **identische** PGP schlüssel im `~/.android` Verzeichniss erstellt werden. Solange das ungelärt ist bleibt scripy draußen und muss manuel instaliert werden.
+
+*ich habe habe das tool noch nicht identifiziert, welches die PGP schlüssel erstellt und ich finde auch keine Abhängigkeiten davon. Es wird auch von nichts benötigt was ich nutze. Nach dem Löschen des `~/.android` Verzeichnisses bleibt die Funktionalität vollständig erhalten*
