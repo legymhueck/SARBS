@@ -83,7 +83,6 @@ A,losslesscut-bin,"8-Plattformübergreifendes GUI-Tool zum verlustfreien Trimmen
 ,yt-dlp,"9-kann jedes YouTube-Video (oder Playlist oder Kanal) herunterladen."
 ,bluez,"9-Daemons für den Bluetooth-Protokollstapel."
 ,bluez-utils,"9-Entwicklungs- und Debugging-Utilities für den Bluetooth-Protokollstapel."
-,scrcpy,"9-Anzeige und Steuerung Ihres Android-Geräts."
 ,gomuks,"9-Ein Terminal-Matrix-Client."
 A,tor-browser-bin,"9-Tor Browser Bundle, anonymes Surfen mit Firefox und Tor."
 ,lynx,"9-ein TUI-Browser, der in SARBS auch zum Erzeugen von Vorschauen von Websites, E-Mails und HTML-Dateien im Terminal verwendet wird."
