@@ -60,3 +60,6 @@ _or clone the repo files directly to your home directory and install the
 ## Standard Desktop Hintergrund
 
 Thomas Thiemeyer's *The Road to Samarkand* ([fb](https://www.facebook.com/t.thiemeyer/), [insta](https://www.instagram.com/tthiemeyer/), [shop](https://www.redbubble.com/de/people/TThiemeyer/shop))
+
+## TODO scripy PGP erstellung klären
+mit scripy kann man auf sein Android Handy zugreifen. Es ist für SARBS nicht notwendig, allerdings nutze ich es um mit meinem Handy zu interagieren. Bei der Installation von Sarbs ist mir aufgefallen dass **identische** PGP schlüssel im `~/.android` Verzeichniss erstellt werden. Solange das ungelärt ist bleibt scripy draußen und muss manuel instaliert werden.
