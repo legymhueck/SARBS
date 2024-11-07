@@ -108,6 +108,7 @@ A,fnm-bin,"0-Schneller und einfacher Node.js-Version-Manager, geschrieben in Rus
 ,v4l-utils,"0-Für besseren Umgang mit Videogeräten."
 A,cd-discid,"0-Ein Backend-Dienstprogramm zum Abrufen von CDDB-Discid-Informationen von CDs."
 A,gdu,"0-Anzeige des Speicherplatzverbrauchs im CLI."
+,pass,"Passwortmanager"
 ,neomutt,"Mailprogramm"
 G,https://github.com/Sergi-us/dwm.git,"5-DWM-6.4 der Fenstermanager."
 G,https://github.com/Sergi-us/st.git,"5-Mein Build des Terminalemulators von suckless."
