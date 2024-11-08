@@ -110,6 +110,7 @@ A,cd-discid,"0-Ein Backend-Dienstprogramm zum Abrufen von CDDB-Discid-Informatio
 A,gdu,"0-Anzeige des Speicherplatzverbrauchs im CLI."
 ,pass,"Passwortmanager"
 ,neomutt,"Mailprogramm"
+,isync,"Mailsyncronisation"
 G,https://github.com/Sergi-us/dwm.git,"5-DWM-6.4 der Fenstermanager."
 G,https://github.com/Sergi-us/st.git,"5-Mein Build des Terminalemulators von suckless."
 G,https://github.com/Sergi-us/dmenu.git,"5-Führt Befehle aus und bietet eine Benutzeroberfläche zur Auswahl."
