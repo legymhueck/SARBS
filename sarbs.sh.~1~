@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# SARBS 2024.11.08
+# SARBS 2024.10.28
 # Sergi's automatisches Einrichtungsskript (SARBS)
 # von Luke Smith <luke@lukesmith.xyz>
 # übersetzt von Sergius <sergius@posteo.de>
@@ -89,24 +89,6 @@ adduserandpass() {
     chown -R "$name":wheel "$(dirname "$repodir")"
     echo "$name:$pass1" | chpasswd
     unset pass1 pass2
-
-    # Neue Backup-Konfiguration
-    # Gruppe erstellen, falls sie nicht existiert
-    if ! getent group backup_users >/dev/null; then
-        whiptail --infobox "Backup-Gruppe wird erstellt..." 7 50
-        groupadd backup_users
-    fi
-
-    # USB-Mount-Verzeichnis erstellen und konfigurieren, falls es nicht existiert
-    if [ ! -d "/mnt/usb" ]; then
-        whiptail --infobox "USB-Mount-Verzeichnis wird eingerichtet..." 7 50
-        mkdir -p "/mnt/usb"
-        chown root:backup_users "/mnt/usb"
-        chmod 2775 "/mnt/usb"
-    fi
-
-    # Nutzer zur Backup-Gruppe hinzufügen
-    usermod -aG backup_users "$name"
 }
 
 # Aktualisiert den Arch-Schlüsselring oder aktiviert Arch-Repositories auf Artix-Systemen.
