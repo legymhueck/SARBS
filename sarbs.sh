@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# SARBS 2024.11.08
+# SARBS 2024.12.15
 # Sergi's automatisches Einrichtungsskript (SARBS)
 # von Luke Smith <luke@lukesmith.xyz>
 # übersetzt von Sergius <sergius@posteo.de>
@@ -258,7 +258,7 @@ Exec=/usr/local/lib/arkenfox-auto-update" > /etc/pacman.d/hooks/arkenfox.hook
 # Installiert Firefox-Add-ons manuell durch Herunterladen der XPI-Dateien.
 installffaddons(){
     # Liste der zu installierenden Add-ons - neu hinzugefügt: darkreader und keepassxc-browser
-    addonlist="ublock-origin decentraleyes istilldontcareaboutcookies vim-vixen darkreader keepassxc-browser"
+    addonlist="ublock-origin decentraleyes istilldontcareaboutcookies vim-vixen darkreader keepassxc-browser multi-account-containers styl-us chameleon-ext nighttab"
     addontmp="$(mktemp -d)"
     trap "rm -fr $addontmp" HUP INT QUIT TERM PWR EXIT
     IFS=' '
